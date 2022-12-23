@@ -1,0 +1,82 @@
+.sidebar{
+	padding-top: 250px;
+}
+.sidenav {
+	height: auto; 
+	width: 160px; 
+	position: fixed; 
+	z-index: 1; 
+	top: 0; 
+	left: 0;
+	background-color: none; 
+	overflow-x: hidden; 
+	padding-top: 200px;
+  }
+
+  .sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 25px;
+	color: rgb(9, 8, 70);
+	display: block;
+	align-items: center;
+	text-align: center;
+  }
+
+  .sidenav a:hover {
+	opacity: 50%;
+  }
+  
+  .profilepic {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 8px;
+  }
+  
+  .profilepic img {
+	border-radius: 50%;
+	width: 50%;
+  }
+
+
+  @media screen and (max-width: 850px) {
+	.sidebar {
+		display: none;
+	}
+	body
+	{
+		overflow: auto;
+	}
+	#about {
+		padding: 40px;
+		padding-top: 125px;
+		padding-bottom: 50px;
+	}
+	#education {
+		padding: 40px;
+		padding-top: 125px;
+		padding-bottom: 50px;
+	}
+	#skills {
+		padding: 40px;
+		padding-top: 125px;
+		padding-bottom: 50px;
+	}
+	#contact {
+		padding: 40px;
+		padding-top: 125px;
+		padding-bottom: 75px;
+	}
+  }
+  @media screen and (min-width: 850px) {
+	.info{
+		padding-left: 175px;
+	}	
+  }
+  @media screen and (min-width: 1100px) {
+	.info{
+		padding-left: 125px;
+	}
+  }

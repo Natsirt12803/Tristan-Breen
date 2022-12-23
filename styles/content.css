@@ -1,0 +1,187 @@
+:root {
+    --primary-color:rgb(9, 8, 70);
+  }
+.notecards {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px ;
+    text-align: center;
+}
+  
+.notecard1 {
+    width: 500px;
+    height: 300px;
+    background-image: url(/Main/media/notecardBackground.jpg);
+    background-size: cover;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 20px;
+}
+.notecard2 {
+    width: 500px;
+    height: 300px;
+    background-image: url(/Main/media/notecardBackground.jpg);
+    background-size: cover;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 20px;
+
+    transform: translate(20px, 150px);
+}
+.corner-image1 {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.corner-image2 {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.educationText1{
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 200px;
+    padding-right: 55px;
+    padding-top: 15px;
+}
+.educationText2{
+    color:var(--primary-color);
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 200px;
+    padding-top: 15px;
+}
+.educationInfo{
+    color: var(--primary-color);
+    padding-bottom: 10px;
+    line-height: 2.25;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* two columns, each with a width of 1 fraction unit */
+    grid-gap: 10px;
+    padding-top: 15px;
+    justify-items: center; 
+    align-items: center;
+    margin: auto;
+    max-width: 1000px;
+}  
+.skillIcons {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+
+
+
+
+.container2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 235px;
+
+}  
+.grid-item {
+    flex: 0 0 100%;
+  }
+.rounded{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    
+}
+.links{
+    transform: translate(175px,-60px);
+    color: rgb(51, 17, 165);
+    font-size: 18px;
+}
+
+
+
+@media screen and (max-width: 1250px) {
+	.notecards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .notecard2 {
+        transform: translate(0px, 25px);
+    }
+}
+@media screen and (max-width: 450px) {
+	.notecard1 {
+        width: 325px;
+        height: 180px;
+    }
+    .notecard2 {
+        width: 325px;
+        height: 180px;
+    }
+    .educationInfo{
+        line-height: 1.25;
+        font-size: small;
+    }
+    .corner-image1 {
+        width: 40px;
+        height: 40px;
+    }
+    .corner-image2 {
+        width: 40px;
+        height: 40px;
+    }
+    .educationText1{
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 415px) {
+	.skillIcons {
+        width: 110px;
+        height: 110px;
+      }
+    
+    .container2 {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    
+    }  
+    .grid-item {
+        flex: 0 0 100%;
+      }
+    .rounded{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        
+    }
+    .links{
+        transform: translate(0px,0px);
+    }
+}
+
+@media screen and (max-width: 750px) {
+	.container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+  
