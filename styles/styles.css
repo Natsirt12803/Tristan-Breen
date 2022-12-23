@@ -18,7 +18,7 @@ body {
   line-height: 1.5;
   overflow:hidden;
 
-  background-image: url(../media/background.png)
+  background-image: url(../media/background.png);
 }
 
 a {
